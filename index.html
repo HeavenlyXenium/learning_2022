@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Language" content="ru">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="main.js" type="text/javascript"></script>
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<title>Документ</title>
+	<script type="text/javascript">
+
+var Person = {
+	constructor: function(name,surname,age,city){
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+		this.city = city;
+		return this;
+	},
+	greet: function(){
+		return console.log(`Hello, I\`am ${this.name}`);
+	},
+	whatAge: function(){
+		console.log(`My age is ${this.age}`);
+	}
+};
+	
+var John = Object.create(Person).constructor ("John","Black","35","Boston");
+
+console.log(John.greet())
+John.greet()
+John.whatAge()
+
+	</script>
+</head>
+<body>
+	ппререкрекре прекрасноп
+</body>
+</html>
